@@ -11,11 +11,13 @@ import UIKit
 class BaseViewController: UIViewController {
     
     let backgroundImage = UIImageView()
+    let headerView = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupBackground()
+        setupHeader()
     }
     
     func setupBackground(){
@@ -30,6 +32,21 @@ class BaseViewController: UIViewController {
         backgroundImage.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         backgroundImage.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         
+    }
+    
+    func setupHeader(){
+        headerView.translatesAutoresizingMaskIntoConstraints = false
+        headerView.backgroundColor = .black
+        headerView.alpha = 0.75
+        headerView.layer.cornerRadius = 20
+        headerView.layer.masksToBounds = true
+        
+        view.addSubview(headerView)
+        
+        headerView.heightAnchor.constraint(equalToConstant: 180).isActive = true
+        headerView.topAnchor.constraint(equalTo: view.topAnchor, constant: -15).isActive = true
+        headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
     }
 
 
