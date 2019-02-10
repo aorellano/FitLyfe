@@ -14,6 +14,8 @@
 		D0E38E8E2204CB05009774E8 /* Fit_LyfeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E38E8D2204CB05009774E8 /* Fit_LyfeTests.swift */; };
 		D0E38E992204CB05009774E8 /* Fit_LyfeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E38E982204CB05009774E8 /* Fit_LyfeUITests.swift */; };
 		D0E38EA7220E60C9009774E8 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E38EA6220E60C9009774E8 /* HomePageVC.swift */; };
+		D0E38EA9220E7902009774E8 /* HomePageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E38EA8220E7902009774E8 /* HomePageCard.swift */; };
+		D0E38EAB220E7945009774E8 /* HomePageCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E38EAA220E7945009774E8 /* HomePageCardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D0E38E982204CB05009774E8 /* Fit_LyfeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fit_LyfeUITests.swift; sourceTree = "<group>"; };
 		D0E38E9A2204CB05009774E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0E38EA6220E60C9009774E8 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
+		D0E38EA8220E7902009774E8 /* HomePageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCard.swift; sourceTree = "<group>"; };
+		D0E38EAA220E7945009774E8 /* HomePageCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCardCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				D0E38E782204CB02009774E8 /* AppDelegate.swift */,
 				D0E38E7A2204CB02009774E8 /* BaseViewController.swift */,
 				D0E38EA6220E60C9009774E8 /* HomePageVC.swift */,
+				D0E38EA8220E7902009774E8 /* HomePageCard.swift */,
+				D0E38EAA220E7945009774E8 /* HomePageCardCell.swift */,
 				D0E38E7F2204CB05009774E8 /* Assets.xcassets */,
 				D0E38E812204CB05009774E8 /* LaunchScreen.storyboard */,
 				D0E38E842204CB05009774E8 /* Info.plist */,
@@ -255,7 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E38EAB220E7945009774E8 /* HomePageCardCell.swift in Sources */,
 				D0E38E7B2204CB02009774E8 /* BaseViewController.swift in Sources */,
+				D0E38EA9220E7902009774E8 /* HomePageCard.swift in Sources */,
 				D0E38E792204CB02009774E8 /* AppDelegate.swift in Sources */,
 				D0E38EA7220E60C9009774E8 /* HomePageVC.swift in Sources */,
 			);
