@@ -16,19 +16,29 @@ class HomePageVC: BaseViewController {
     var homePageCards: [HomePageCard] = {
         let aboutUs = HomePageCard()
         aboutUs.cardImage = "card1"
-        //aboutUs.cardTitle = "LIVE\n\nYOUR\n\nLIFE\n\nEPICALLY"
-        //aboutUs.homePageCardDescription = "Dedicate yourself to doing well for others.\nBe a HERO whether it's the smallest gesture or the biggest adventure."
+        aboutUs.cardTitle = "LIVE\n\nYOUR\n\nLIFE\n\nEPICALLY"
+        aboutUs.cardDescription = "Dedicate yourself to doing well for others.\nBe a HERO whether it's the smallest gesture or the biggest adventure."
+        
+        
         let signUp = HomePageCard()
         signUp.cardImage = "card2"
+        signUp.cardTitle = "BECOME APART OF THE\nFAMILY"
+        signUp.cardDescription = "Create a account or sign in if you already have one"
         
         let merch = HomePageCard()
         merch.cardImage = "card3"
+        merch.cardTitle = "GET SOME\nMERCH"
+        merch.cardDescription = "Browse through activewear gear and accessories"
         
         let inspiration = HomePageCard()
         inspiration.cardImage = "card4"
+        inspiration.cardTitle = "READ SOME\nWORDS OF\nENCOURAGEMENT"
+        inspiration.cardDescription = "Read motivational stories stimulating thoughts and testimonials"
         
         let contactUs = HomePageCard()
         contactUs.cardImage = "card5"
+        contactUs.cardTitle = "REACH OUT TO\nUS"
+        contactUs.cardDescription = "Let us know how you feel and think about fit lyfe"
         
         return [aboutUs, signUp, merch, inspiration, contactUs]
         
@@ -43,6 +53,7 @@ class HomePageVC: BaseViewController {
     func homePageSetup(){
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = -15
         
         
         let collectionView = UICollectionView(frame: view.frame, collectionViewLayout: layout)
@@ -89,6 +100,6 @@ extension HomePageVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLa
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width/1.3, height: collectionView.frame.height/1.11)
+        return CGSize(width: collectionView.frame.width/1.15, height: collectionView.frame.height/1.11)
     }
 }

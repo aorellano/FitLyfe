@@ -11,6 +11,6 @@ import UIKit
 class HomePageCard: NSObject {
     var cardImage: String?
     var cardTitle: String?
-    var homePageCardDescription: String?
+    var cardDescription: String?
     var homeCardButton: String?
 }
