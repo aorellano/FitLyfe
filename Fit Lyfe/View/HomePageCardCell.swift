@@ -16,7 +16,6 @@ class HomePageCardCell: UICollectionViewCell{
             cardImage.image = UIImage(named:(homePageCard?.cardImage)!)
             cardTitle.text = homePageCard?.cardTitle
             cardDescription.text = homePageCard?.cardDescription
-            
         }
     }
     
@@ -38,7 +37,7 @@ class HomePageCardCell: UICollectionViewCell{
         cardBackgroundSetup()
         cardTitleSetup()
         cardDescriptionSetup()
-
+        cardButtonSetup()
     }
     
     func cardBackgroundSetup(){
@@ -92,13 +91,26 @@ class HomePageCardCell: UICollectionViewCell{
         addSubview(cardDescription)
         
         cardDescription.topAnchor.constraint(equalTo: cardTitle.bottomAnchor, constant: 30).isActive = true
-        cardDescription.leadingAnchor.constraint(equalTo: cardImage.leadingAnchor, constant: 20).isActive = true
-        cardDescription.trailingAnchor.constraint(equalTo: cardImage.trailingAnchor, constant: -20).isActive = true
-        
+        cardDescription.leadingAnchor.constraint(equalTo: cardImage.leadingAnchor, constant: 30).isActive = true
+        cardDescription.trailingAnchor.constraint(equalTo: cardImage.trailingAnchor, constant: -30).isActive = true
+
     }
     
-
-    
+    func cardButtonSetup(){
+        cardButton.setTitle(">", for: .normal)
+        cardButton.translatesAutoresizingMaskIntoConstraints = false
+        cardButton.titleLabel?.font = UIFont(name: "ArialMT", size: 30)
+        cardButton.setTitleColor(.black, for: .normal)
+        cardButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        
+        addSubview(cardButton)
+        
+        cardButton.bottomAnchor.constraint(equalTo: cardImage.bottomAnchor).isActive = true
+        cardButton.trailingAnchor.constraint(equalTo: cardImage.trailingAnchor, constant: -10).isActive = true
+    }
+    @objc func buttonAction(_ sender: AnyObject){
+        print("Home button was pressed")
+    }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

@@ -53,7 +53,7 @@ class HomePageVC: BaseViewController {
     func homePageSetup(){
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.minimumLineSpacing = -15
+        layout.minimumLineSpacing = -20
         
         
         let collectionView = UICollectionView(frame: view.frame, collectionViewLayout: layout)
@@ -97,9 +97,11 @@ extension HomePageVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLa
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! HomePageCardCell
         cell.homePageCard = homePageCards[indexPath.item]
+        print(indexPath.item)
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width/1.15, height: collectionView.frame.height/1.11)
+        return CGSize(width: collectionView.frame.width/1.15, height: collectionView.frame.height/1.05)
     }
+    
 }

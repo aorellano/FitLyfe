@@ -101,11 +101,10 @@
 		D0E38E772204CB02009774E8 /* Fit Lyfe */ = {
 			isa = PBXGroup;
 			children = (
+				D0F15BE12213225700AE850B /* Model */,
+				D0F15BE22213226200AE850B /* View */,
+				D0F15BE32213226700AE850B /* Controller */,
 				D0E38E782204CB02009774E8 /* AppDelegate.swift */,
-				D0E38E7A2204CB02009774E8 /* BaseViewController.swift */,
-				D0E38EA6220E60C9009774E8 /* HomePageVC.swift */,
-				D0E38EA8220E7902009774E8 /* HomePageCard.swift */,
-				D0E38EAA220E7945009774E8 /* HomePageCardCell.swift */,
 				D0E38E7F2204CB05009774E8 /* Assets.xcassets */,
 				D0E38E812204CB05009774E8 /* LaunchScreen.storyboard */,
 				D0E38E842204CB05009774E8 /* Info.plist */,
@@ -129,6 +128,31 @@
 				D0E38E9A2204CB05009774E8 /* Info.plist */,
 			);
 			path = "Fit LyfeUITests";
+			sourceTree = "<group>";
+		};
+		D0F15BE12213225700AE850B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0E38EA8220E7902009774E8 /* HomePageCard.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0F15BE22213226200AE850B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0E38EAA220E7945009774E8 /* HomePageCardCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0F15BE32213226700AE850B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D0E38E7A2204CB02009774E8 /* BaseViewController.swift */,
+				D0E38EA6220E60C9009774E8 /* HomePageVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
